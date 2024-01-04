@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <h1>Form Pendaftaran Mahasiswa Baru</h1>
+
+    <h4 style="background-color:#d5ecf7;">Data Diri</h4>
+    <table>
+        <tr>
+            <td colspan="2">Nama Lengkap:</td>
+            <td colspan="1">Nomor Identitas (NIK):</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><input type="text" name="Nama" id="" placeholder="Masukkan Nama Lengkap" size="60"></td>
+            <td><input type="text" name="nik" id="" size="30" placeholder="Masukkan NIK"></td>
+        </tr>
+
+        <tr>
+            <td>Tempat Lahir:</td>
+            <td>Tanggal Lahir:</td>
+            <td>Jenis Kelamin:</td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="Tempat Lahir" id="" placeholder="Masukkan Tempat Lahir" size="30"></td>
+            <td><input type="date" name="Tanggal Lahir" id="" style="width: 98%;"></td>
+            <td class="jeniskelamin">
+                <select name="Jenis Kelamin" id="" style="width: 100%;">
+                    <option value="" disabled selected>Pilih</option>
+                    <option value="Perempuan">Perempuan</option>
+                    <option value="Laki-Laki">Laki-Laki</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Kewarganegaraan:</td>
+            <td>Agama:</td>
+            <td>Nama Ibu Kandung:</td>
+        </tr>
+
+        <tr>
+            <td class="negara">
+                <select name="Kewarganegaraan" id="" style="width: 100%;" >
+                    <option value="" disabled selected>Pilih</option>
+                    <option value="WNI">WNI</option>
+                    <option value="WNA">WNA</option>
+                </select>
+            </td>
+
+            <td class="agama">
+                <select name="Agama" id="" style="width: 100%;">
+                    <option value="" disabled selected>Pilih</option>
+                    <option value="Islam">Islam</option>
+                    <option value="Kristen">Kristen</option>
+                    <option value="Katolik">Katolik</option>
+                    <option value="Hindu">Hindu</option>
+                    <option value="Budha">Budha</option>
+                </select>
+            </td>
+
+            <td><input type="text" name="Nama Ibu Kandung" id="" size="30" placeholder="Masukkan Nama Ibu Kandung"></td>
+        </tr>
+
+        <tr>
+            <td>Email:</td>
+            <td>No Telp:</td>
+        </tr>
+
+        <tr>
+            <td><input type="email" name="Email" id="" size="30" placeholder="Masukkan Alamat Email"></td>
+            <td><input type="text" name="No Telp" id="" size="24" placeholder="Masukkan No.Telp"></td>
+        </tr>
+    </table>
+
+
+    <h4  style="background-color:#d5ecf7;">Alamat Asal</h4>
+    <table>
+        <tr>
+            <td colspan="2">Alamat:</td>
+            <td colspan="1">Kode Pos:</td>
+        </tr>
+
+        <tr>
+            <td colspan="2"> <textarea name="Alamat" id="" rows="2" cols="58" placeholder="Masukkan Alamat"></textarea></td>
+            <td><input type="text" name="Kode Pos" id="Kode" size="30" placeholder="Masukkan Kode Pos"></td>
+        </tr>
+
+        <tr>
+            <td>Provinsi:</td>
+            <td>Kabupaten:</td>
+            <td>Kecamatan:</td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="Provinsi" id="Provinsi" size="27" placeholder="Masukkan Provinsi"></td>
+            <td><input type="text" name="Kabupaten" id="Kabupaten" size="27" placeholder="Masukkan Kabupaten"></td>
+            <td><input type="text" name="Kecamatan" id="Kecamatan" size="30" placeholder="Masukkan Kecamatan"></td>
+        </tr>
+    </table>
+
+
+    <h4  style="background-color:#d5ecf7;">Pendidikan</h4>
+    <table>
+        <tr>
+            <td colspan="2">Pendidikan Terakhir:</td>
+            <td colspan="1">Nama Sekolah:</td>
+            <td colspan="1">Rata Rata Nilai Rapot Sekolah:</td>
+        </tr>
+
+        <tr>
+            <td class="pendidikan" colspan="2">
+                <input type="text" name="Pendidikan Terakhir" id="" placeholder="Masukkan Pendidikan Terakhir" size="27">
+            </td>
+            <td><input type="text" name="Nama Sekolah" id="" size="27" placeholder="Masukkan Nama Sekolah"></td>
+            <td><input type="text" name="Rata Rata Nilai Rapot Sekolah" id="" size="30" placeholder="Masukkan Nilai Rata Rata Rapot"></td>
+        </tr>
+    </table>
+
+
+    <h4  style="background-color:#d5ecf7;">Pilihan Program Studi</h4>
+    <table>
+        <tr>
+            <td colspan="1">Pilih Program Studi 1:</td>
+            <td colspan="1">Pilih Program Studi 2:</td>
+        </tr>
+
+        <tr>
+            <td><input type="text" name="Pilih Program Studi 1" id="" placeholder="Masukkan Pilihan Program Studi 1" size="25"></td>
+            <td><input type="text" name="Pilih Program Studi 2" id="" placeholder="Masukkan Pilihan Program Studi 2" size="25"></td>
+        </tr>
+    </table>
+
+    <input type="submit" value="Daftar">
+    <input type="reset" value="Reset">
+</body>
+</html>
